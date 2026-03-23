@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>DevTrack Telemetry</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="grid"></div>
+
+<div class="container">
+
+<div class="title">
+
+DEVTRACK TELEMETRY
+
+<p>Developer Performance Analytics</p>
+
+</div>
+
+
+<div class="dashboard">
+
+<div class="left">
+
+<div class="widget">
+
+<input id="coding" type="number" required>
+
+<label>CODING HOURS</label>
+
+</div>
+
+<div class="widget">
+
+<input id="learning" type="number" required>
+
+<label>LEARNING</label>
+
+</div>
+
+<div class="widget">
+
+<input id="project" type="number" required>
+
+<label>PROJECT BUILD</label>
+
+</div>
+
+<div class="widget">
+
+<input id="exercise" type="number" required>
+
+<label>FITNESS</label>
+
+</div>
+
+<div class="widget">
+
+<input id="sleep" type="number" required>
+
+<label>SLEEP</label>
+
+</div>
+
+<div class="widget">
+
+<input id="distraction" type="number" required>
+
+<label>DISTRACTIONS</label>
+
+</div>
+
+
+<button onclick="calculateScore()">
+
+RUN ANALYSIS
+
+</button>
+
+</div>
+
+
+
+<div class="right">
+
+<div class="speedometer">
+
+<div class="ring">
+
+<div class="inner">
+
+<span id="score">0</span>
+
+<p>SCORE</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="barBox">
+
+<div class="bar">
+
+<div class="flow" id="progress"></div>
+
+</div>
+
+</div>
+
+
+<p id="feedback"></p>
+
+</div>
+
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
